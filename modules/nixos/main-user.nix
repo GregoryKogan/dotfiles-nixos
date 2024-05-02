@@ -29,6 +29,9 @@ in
       initialPassword = "qw";
       extraGroups = [ "networkmanager" "wheel" ];
       description = cfg.description;
+      packages = with pkgs; [
+	firefox
+      ];
       shell = pkgs.zsh;
     };
   };
