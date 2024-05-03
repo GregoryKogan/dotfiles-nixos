@@ -11,8 +11,8 @@ in {
   };
 
   config = lib.mkIf cfg.enable {
-    fonts.fonts = with pkgs; [
-      (nerdfonts.override {fonts = ["JetBrainsMono"];})
+    home.packages = [
+      (pkgs.nerdfonts.override {fonts = ["JetBrainsMono"];})
     ];
   };
 }

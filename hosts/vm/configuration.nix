@@ -14,7 +14,6 @@
     inputs.home-manager.nixosModules.default
     ../../modules/nixos/main-user.nix
     ../../modules/nixos/software.nix
-    ../../modules/nixos/fonts.nix
   ];
 
   # Bootloader.
@@ -104,7 +103,6 @@
   nixpkgs.config.allowUnfree = true;
 
   software.enable = true;
-  fonts.enable = true;
 
   home-manager = {
     extraSpecialArgs = {inherit inputs;};
