@@ -1,12 +1,15 @@
-{ osConfig, inputs, pkgs, ... }:
-
 {
+  osConfig,
+  inputs,
+  pkgs,
+  ...
+}: {
   imports = [
     ../../modules/home-manager/zsh.nix
     ../../modules/home-manager/alacritty.nix
   ];
 
-  home.username = osConfig.main-user.username; 
+  home.username = osConfig.main-user.username;
   home.homeDirectory = "/home/${osConfig.main-user.username}";
 
   home.stateVersion = "23.11";
@@ -49,7 +52,7 @@
   home.sessionVariables = {
     EDITOR = "nvim";
   };
-  
+
   zsh.enable = true;
   alacritty.enable = true;
 }

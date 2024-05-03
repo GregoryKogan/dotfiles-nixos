@@ -1,6 +1,10 @@
-{ inputs, config, pkgs, lib, ... }:
-
 {
+  inputs,
+  config,
+  pkgs,
+  lib,
+  ...
+}: {
   options.alacritty = {
     enable = lib.mkEnableOption "enable alacritty config module";
   };
@@ -11,17 +15,17 @@
       settings = {
         env = {
           TERM = "alacritty";
-	};
-	window = {
-	  dimensions = {
-	    lines = 45;
-	    columns = 150;
-	  };
-	  padding = {
-	    x = 6;
-	    y = 6;
-	  };
-	  title = "Alacritty";
+        };
+        window = {
+          dimensions = {
+            lines = 45;
+            columns = 150;
+          };
+          padding = {
+            x = 6;
+            y = 6;
+          };
+          title = "Alacritty";
         };
       };
     };

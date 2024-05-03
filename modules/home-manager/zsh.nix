@@ -1,6 +1,10 @@
-{ inputs, config, pkgs, lib, ... }:
-
 {
+  inputs,
+  config,
+  pkgs,
+  lib,
+  ...
+}: {
   options.zsh = {
     enable = lib.mkEnableOption "enable zsh config module";
   };
@@ -14,7 +18,7 @@
 
       shellAliases = {
         update-vm = "sudo nixos-rebuild switch --flake ~/nixos#vm";
-	addpkg = "vim ~/nixos/modules/nixos/software.nix";
+        addpkg = "vim ~/nixos/modules/nixos/software.nix";
         vim = "nvim";
         cd = "z";
         ls = "eza -TL=1 --icons";
@@ -23,12 +27,12 @@
 
       oh-my-zsh = {
         enable = true;
-        plugins = [ "git" "thefuck" "zoxide" "starship" ];
+        plugins = ["git" "thefuck" "zoxide" "starship"];
       };
 
       initExtra = ''
-	colorscript --random
-	echo 'Greetings master!'
+        colorscript --random
+        echo 'Greetings master!'
       '';
     };
   };

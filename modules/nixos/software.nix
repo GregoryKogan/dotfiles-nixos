@@ -1,9 +1,11 @@
-{ lib, config, pkgs, ... }:
-
-let
-  cfg = config.software;
-in
 {
+  lib,
+  config,
+  pkgs,
+  ...
+}: let
+  cfg = config.software;
+in {
   options.software = {
     enable = lib.mkEnableOption "enable software module";
   };
@@ -22,6 +24,7 @@ in
       thefuck
       eza
       dwt1-shell-color-scripts
+      alejandra
     ];
   };
 }
