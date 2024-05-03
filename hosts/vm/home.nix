@@ -3,6 +3,7 @@
 {
   imports = [
     ../../modules/home-manager/zsh.nix
+    ../../modules/home-manager/alacritty.nix
   ];
 
   home.username = osConfig.main-user.username; 
@@ -50,4 +51,5 @@
   };
   
   zsh.enable = true;
+  alacritty.enable = true;
 }
