@@ -14,6 +14,7 @@
 
       shellAliases = {
         update-vm = "sudo nixos-rebuild switch --flake ~/nixos#vm";
+	addpkg = "vim ~/nixos/modules/nixos/software.nix";
         vim = "nvim";
         cd = "z";
         ls = "eza -TL=1 --icons";
