@@ -14,6 +14,7 @@
     inputs.home-manager.nixosModules.default
     ../../modules/nixos/main-user.nix
     ../../modules/nixos/software.nix
+    ../../modules/nixos/fonts.nix
   ];
 
   # Bootloader.
@@ -102,9 +103,8 @@
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
-  # List packages installed in system profile. To search, run:
-  # $ nix search wget
   software.enable = true;
+  fonts.enable = true;
 
   home-manager = {
     extraSpecialArgs = {inherit inputs;};
