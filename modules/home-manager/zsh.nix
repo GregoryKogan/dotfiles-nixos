@@ -17,7 +17,7 @@
       syntaxHighlighting.enable = true;
 
       shellAliases = {
-        update-vm = "sudo nixos-rebuild switch --flake ~/nixos#vm";
+        rebuild = "sudo nixos-rebuild switch --flake";
         addpkg = "vim ~/nixos/modules/nixos/software.nix";
         vim = "nvim";
         cd = "z";
