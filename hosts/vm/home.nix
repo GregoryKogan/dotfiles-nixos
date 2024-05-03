@@ -5,6 +5,7 @@
   ...
 }: {
   imports = [
+    ../../modules/home-manager/git.nix
     ../../modules/home-manager/fonts.nix
     ../../modules/home-manager/zsh.nix
     ../../modules/home-manager/alacritty.nix
@@ -49,6 +50,7 @@
     EDITOR = "nvim";
   };
 
+  git.enable = true;
   fonts.enable = true;
   zsh.enable = true;
   alacritty.enable = true;
