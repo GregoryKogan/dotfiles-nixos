@@ -21,6 +21,7 @@ in
       zoxide
       thefuck
       eza
+      dwt1-shell-color-scripts
     ];
   };
 }

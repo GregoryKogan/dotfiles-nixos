@@ -24,6 +24,11 @@
         enable = true;
         plugins = [ "git" "thefuck" "zoxide" "starship" ];
       };
+
+      initExtra = ''
+	colorscript --random
+	echo 'Greetings master!'
+      '';
     };
   };
 }
