@@ -25,8 +25,8 @@
 	];
 	add_newline = false;
 	character = {
-	  success_symbol = "";
-	  error_symbol = "";
+	  success_symbol = "[❱](bold red)[❱](bold green)[❱](bold blue)";
+	  error_symbol = "[❱](bold red)[❱](bold red)[❱](bold red)";
 	};
 	cmd_duration = {
 	  min_time = 5000;
