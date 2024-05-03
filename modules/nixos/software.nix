@@ -17,6 +17,10 @@ in
       vim
       neovim
       alacritty
+      starship
+      zoxide
+      thefuck
+      eza
     ];
   };
 }
