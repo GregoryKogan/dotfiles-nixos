@@ -1,5 +1,7 @@
 # dotfiles-nixos
 
+[![Hits-of-Code](https://hitsofcode.com/github/GregoryKogan/dotfiles-nixos?branch=main)](https://hitsofcode.com/github/GregoryKogan/dotfiles-nixos/view?branch=main)
+
 ## Installation
 
 **1. Enter nix-shell with `git`**
