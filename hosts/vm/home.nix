@@ -5,11 +5,13 @@
   ...
 }: {
   imports = [
+    inputs.nixvim.homeManagerModules.nixvim
     ../../modules/home-manager/git.nix
     ../../modules/home-manager/fonts.nix
     ../../modules/home-manager/zsh.nix
     ../../modules/home-manager/alacritty.nix
     ../../modules/home-manager/starship.nix
+    ../../modules/home-manager/nixvim.nix
   ];
 
   home.username = osConfig.main-user.username;
@@ -55,4 +57,5 @@
   zsh.enable = true;
   alacritty.enable = true;
   starship.enable = true;
+  nixvim.enable = true;
 }
