@@ -26,7 +26,7 @@
             x = 6;
             y = 6;
           };
-	  dynamic_padding = true;
+          dynamic_padding = true;
           title = "Alacritty";
           dynamic_title = false;
           opacity = 1.0;
