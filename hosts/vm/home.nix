@@ -36,7 +36,8 @@
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
   # plain files is through 'home.file'.
   home.file = {
-    ".config/alacritty/" = {  # download alacritty themes
+    ".config/alacritty/" = {
+      # download alacritty themes
       source = builtins.fetchGit "https://github.com/alacritty/alacritty-theme";
       recursive = true;
     };
