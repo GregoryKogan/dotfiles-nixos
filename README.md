@@ -4,25 +4,41 @@
 
 ## Installation
 
-**1. Enter nix-shell with `git`**
+**1. Install `git`**
+
+Open default NixOS config file and add `git` to `packages`
 
 ```shell
-nix-shell -p git
+sudo nano /etc/nixos/configuration.nix
 ```
 
 **2. Download configs**
 
 ```shell
-git clone https://github.com/GregoryKogan/dotfiles-nixos.git nixos
+git clone https://github.com/GregoryKogan/dotfiles-nixos.git ~/nixos
 ```
 
 **3. Rebuild the system**
 
 Availabe `<host>` options:
-  - `vm`
+  - `vm` - UTM virtual machine
 
 ```shell
 sudo nixos-rebuild switch --impure --flake ~/nixos#<host>
 ```
 
-After this the system might freeze. Just wait a few minutes and reboot.
+### Troubleshooting
+
+**Magic commands that sometimes fix weird errors**
+
+Collect garbage
+
+```shell
+nix-collect-garbage -d
+```
+
+Repair nix-store files (should be run as sudo)
+
+```shell
+nix-store --verify --check-contents --repair
+```
