@@ -20,12 +20,12 @@ in {
       neovim
       alacritty
       starship
-      zoxide  # alternative to cd
-      thefuck  
-      eza  # alternative to ls
+      zoxide # alternative to cd
+      thefuck
+      eza # alternative to ls
       dwt1-shell-color-scripts
-      alejandra  # nix language formatter
-      ripgrep  # dependency of nvim.telescope
+      alejandra # nix language formatter
+      ripgrep # dependency of nvim.telescope
     ];
   };
 }

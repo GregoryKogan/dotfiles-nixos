@@ -50,7 +50,7 @@
           keymaps = {
             "<C-p>" = {
               action = "git_files";
-              options = { desc = "Telescope git files"; };
+              options = {desc = "Telescope git files";};
             };
             "<leader>fg" = "live_grep";
           };
