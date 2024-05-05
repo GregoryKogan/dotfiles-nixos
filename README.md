@@ -2,6 +2,10 @@
 
 [![Hits-of-Code](https://hitsofcode.com/github/GregoryKogan/dotfiles-nixos?branch=main)](https://hitsofcode.com/github/GregoryKogan/dotfiles-nixos/view?branch=main)
 
+<p align="center">
+  <img src="https://github.com/GregoryKogan/dotfiles-nixos/assets/60318411/65971b6a-0f2f-4886-b1df-331a14eedb91" width="35%" />
+</p>
+
 ## Installation
 
 **1. Install `git`**
