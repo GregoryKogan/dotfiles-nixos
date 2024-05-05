@@ -27,6 +27,20 @@ Availabe `<host>` options:
 sudo nixos-rebuild switch --impure --flake ~/nixos#<host>
 ```
 
+### Post install
+
+Generate github ssh key and add it to your account
+
+```shell
+github-ssh
+```
+
+Update this repo to use ssh remote origin
+
+```shell
+git remote set-url origin git@github.com:GregoryKogan/dotfiles-nixos.git
+```
+
 ### Troubleshooting
 
 **Magic commands that sometimes fix weird errors**
