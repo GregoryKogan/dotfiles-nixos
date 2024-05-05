@@ -12,7 +12,7 @@
   config = lib.mkIf config.nixvim.enable {
     programs.nixvim = {
       enable = true;
-      
+
       defaultEditor = true;
 
       colorschemes.tokyonight.enable = true;
@@ -23,23 +23,23 @@
 
       clipboard = {
         register = "unnamedplus";
-	providers.wl-copy.enable = true;
+        providers.wl-copy.enable = true;
       };
 
       opts = {
         autoindent = true;
-	expandtab = true;
-	breakindent = true;
-	smartindent = true;
+        expandtab = true;
+        breakindent = true;
+        smartindent = true;
 
-	autoread = true;
-	colorcolumn = "120";
-	updatetime = 100;
+        autoread = true;
+        colorcolumn = "120";
+        updatetime = 100;
 
-	number = true;
-	relativenumber = true;
+        number = true;
+        relativenumber = true;
 
-	undofile = true;
+        undofile = true;
       };
     };
   };

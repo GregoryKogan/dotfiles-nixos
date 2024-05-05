@@ -34,6 +34,7 @@
         };
         directory = {
           format = "[$path]($style)";
+          style = "bold bright-blue";
           truncation_length = 5;
           truncation_symbol = "../";
         };
