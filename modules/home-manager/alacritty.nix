@@ -31,10 +31,10 @@
             columns = 150;
           };
           padding = {
-            x = 6;
-            y = 6;
+            x = 3;
+            y = 3;
           };
-          dynamic_padding = true;
+          dynamic_padding = false;
           title = "Alacritty";
           dynamic_title = false;
           opacity = 1.0;
