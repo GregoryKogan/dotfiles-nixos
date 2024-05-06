@@ -45,6 +45,7 @@
 
   home.sessionVariables = {
     EDITOR = "nvim";
+    XCURSOR_THEME = "Adwaita";
   };
 
   git.enable = true;
