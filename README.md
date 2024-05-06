@@ -16,6 +16,12 @@ Open default NixOS config file and add `git` to `packages`
 sudo nano /etc/nixos/configuration.nix
 ```
 
+Rebuild the system
+
+```shell
+sudo nixos-rebuild switch
+```
+
 **2. Download configs**
 
 ```shell
