@@ -11,6 +11,7 @@
     ../../modules/home-manager/zsh.nix
     ../../modules/home-manager/alacritty.nix
     ../../modules/home-manager/starship.nix
+    ../../modules/home-manager/nvim/module.nix
   ];
 
   home.username = osConfig.main-user.username;
@@ -34,11 +35,6 @@
       recursive = true;
     };
     
-    ".config/nvim/" = {
-      # download NvChad
-      source = builtins.fetchGit "https://github.com/NvChad/starter";
-      recursive = true;
-    };
     # # You can also set the file content immediately.
     # ".gradle/gradle.properties".text = ''
     #   org.gradle.console=verbose
@@ -60,4 +56,5 @@
     theme = "tokyo-night-storm";
   };
   starship.enable = true;
+  nvim.enable = true;
 }
