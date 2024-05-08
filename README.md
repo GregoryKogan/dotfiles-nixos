@@ -8,6 +8,10 @@
 
 ## Installation
 
+**0. Install NixOS**
+
+It's not recommended to get any desktop environment on initial installation of NixOS.
+
 **1. Install `git`**
 
 Open default NixOS config file and add `git` to `packages`
