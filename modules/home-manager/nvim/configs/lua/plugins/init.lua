@@ -26,13 +26,17 @@ return {
   -- 	},
   -- },
   --
-  -- {
-  -- 	"nvim-treesitter/nvim-treesitter",
-  -- 	opts = {
-  -- 		ensure_installed = {
-  -- 			"vim", "lua", "vimdoc",
-  --      "html", "css"
-  -- 		},
-  -- 	},
-  -- },
+  {
+    "nvim-treesitter/nvim-treesitter",
+   	opts = {
+   		ensure_installed = {
+   			"vim", "lua", "vimdoc",
+        "html", "css", "nix",
+        "bash", "python", "c",
+        "cpp", "cmake", "javascript",
+        "typescript", "vue", "dockerfile",
+        "markdown"
+   		},
+   	},
+  },
 }
