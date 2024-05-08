@@ -17,6 +17,14 @@
   };
 
   config = lib.mkIf config.alacritty.enable {
+    home.file = {
+      ".config/alacritty/" = {
+        # download alacritty themes
+        source = builtins.fetchGit "https://github.com/alacritty/alacritty-theme";
+        recursive = true;
+      };
+    };
+
     programs.alacritty = {
       enable = true;
       settings = {
