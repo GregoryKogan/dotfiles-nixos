@@ -5,14 +5,12 @@
   ...
 }: {
   imports = [
-    inputs.nixvim.homeManagerModules.nixvim
     ../../modules/home-manager/git.nix
     ../../modules/home-manager/github-ssh.nix
     ../../modules/home-manager/fonts.nix
     ../../modules/home-manager/zsh.nix
     ../../modules/home-manager/alacritty.nix
     ../../modules/home-manager/starship.nix
-    ../../modules/home-manager/nixvim.nix
   ];
 
   home.username = osConfig.main-user.username;
@@ -35,7 +33,12 @@
       source = builtins.fetchGit "https://github.com/alacritty/alacritty-theme";
       recursive = true;
     };
-
+    
+    ".config/nvim/" = {
+      # download NvChad
+      source = builtins.fetchGit "https://github.com/NvChad/starter";
+      recursive = true;
+    };
     # # You can also set the file content immediately.
     # ".gradle/gradle.properties".text = ''
     #   org.gradle.console=verbose
@@ -57,5 +60,4 @@
     theme = "tokyo-night-storm";
   };
   starship.enable = true;
-  nixvim.enable = true;
 }
